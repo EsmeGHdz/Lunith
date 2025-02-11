@@ -29,3 +29,7 @@ app.get("/register", (req, res) => {
 app.get("/login", (req, res) => {
     res.sendFile("pages/login.html", { root: __dirname });
 });
+
+app.get("/admin", (req, res) => {
+    res.sendFile("pages/admin/admin.html", { root: __dirname });
+});

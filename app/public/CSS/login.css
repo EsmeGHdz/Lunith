@@ -1,0 +1,53 @@
+main{
+    display: flex;
+    justifiy-content: center;
+    align-items: center;
+    min-height: 100svh;
+    font-size:larger;
+    margin-left: 40%;
+}
+
+.form-container{
+    width: 500px;
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form+p. form p{
+    text-align: center;
+}
+
+input, button{
+    border-radius: 5px;
+    border: unset;
+    padding: 15px 30px;
+    font-size: larger;
+}
+
+button{
+    background: linear-gradient(100deg, #365b6d, #439771);
+    cursor: pointer;
+    color: white;
+    font-weight: bold;  
+}
+
+.error{
+    color: rgb(255, 81, 81);
+}
+
+.escondido{
+    display: none;
+}
+
+.sr-only{
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
