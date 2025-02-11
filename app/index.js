@@ -21,3 +21,11 @@ app.get("/", (req, res) => {
 app.get("/acercade", (req, res) => {
     res.sendFile("pages/acercade.html", { root: __dirname });
 });
+
+app.get("/register", (req, res) => {
+    res.sendFile("pages/register.html", { root: __dirname });
+});
+
+app.get("/login", (req, res) => {
+    res.sendFile("pages/login.html", { root: __dirname });
+});
