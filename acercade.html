@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/L-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <title>Acerca de Nosotros | Lunith</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="img/logoNav.png" alt="Lunith">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="home.html">Inicio</a></li>
+                <li><a href="#">Catálogo</a></li>
+                <li><a href="#">Carrito</a></li>
+                <li><a href="#">Usuario</a></li>
+                <li><a href="acercade.html">Acerca de Nosotros</a></li>
+            </ul>
+        </nav>
+        <a class="btn" href="#"><button>Contacto</button></a>
+    </header>
+    
+    <main class="contenido">
+        <section class="info">
+            <div class="info-container">
+                <div class="info-text">
+                    <h1>Acerca de Nosotros</h1>
+                    <p>Lunith es una tienda en línea mexicana especializada en la venta de figuras coleccionables, con un enfoque en las populares figuras Nendoroid.</p>
+                    <p>Nuestro objetivo es ofrecer productos auténticos y de alta calidad para coleccionistas y fanáticos del anime, videojuegos y cultura pop.</p>
+                    <p>Contamos con una selección cuidadosamente elegida de figuras de marcas reconocidas y trabajamos para que nuestros clientes tengan la mejor experiencia de compra.</p>
+                    <p>Explora nuestro catálogo y encuentra las mejores figuras para tu colección.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mision-vision">
+            <h2>Nuestra Misión</h2>
+            <p>Brindar a los coleccionistas y fanáticos del anime, los videojuegos y la cultura pop acceso a figuras coleccionables auténticas y de alta calidad, ofreciendo una experiencia de compra confiable y satisfactoria.</p>
+
+            <h2>Nuestra Visión</h2>
+            <p>Ser la tienda en línea líder en México en la venta de figuras coleccionables, destacándonos por la autenticidad de nuestros productos, el servicio excepcional y nuestra pasión por la cultura geek.</p>
+        </section>
+
+        <section class="valores">
+            <h2>Nuestros Valores</h2>
+            <ul>
+                <li><strong>Lealtad</strong> – Compromiso con nuestros clientes y su satisfacción.</li>
+                <li><strong>Unicidad</strong> – Productos auténticos y exclusivos para coleccionistas.</li>
+                <li><strong>Novedad</strong> – Mantenernos actualizados con las últimas tendencias.</li>
+                <li><strong>Integridad</strong> – Honestidad y transparencia en cada compra.</li>
+                <li><strong>Trabajo en equipo</strong> – Unimos esfuerzos para brindar el mejor servicio.</li>
+                <li><strong>Honestidad</strong> – Nos comprometemos a ofrecer productos originales y de calidad.</li>
+            </ul>
+        </section>
+
+        <section class="mapa">
+            <h2>Ubicación de Nuestra Tienda</h2>
+            <p>Nos encontramos en un punto estratégico para que nuestros clientes puedan visitarnos y conocer nuestras figuras en persona.</p>
+            <div id="map"></div>
+        </section>
+        
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSg1BGQlmZrRFhs8bo7Q324vBNBZFGM-U&callback=iniciarMapa"></script>
+        <script>
+            function iniciarMapa() {
+                var ubicacion = { lat: 25.66838960243535, lng: -100.30750349795798 };
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 15,
+                    center: ubicacion
+                });
+        
+                var marker = new google.maps.Marker({
+                    position: ubicacion,
+                    map: map,
+                    title: "Nuestra Tienda"
+                });
+            }
+        </script>
+        
+    </main>
+</body>
+</html>
