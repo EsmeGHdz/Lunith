@@ -1,4 +1,46 @@
-/* Estilos del Carrito */
+.carrito-tabla {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.carrito-tabla th, .carrito-tabla td {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    color: #365b6d;
+    font-weight: 600;
+}
+
+.carrito-tabla th {
+    background-color: #f4f4f4;
+}
+
+.carrito-tabla td {
+    color: #1b3039;
+}
+
+.carrito-tabla input[type="number"] {
+    width: 60px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.carrito-tabla button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #365b6d;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.carrito-tabla button:hover {
+    background-color: #0567a0;
+}
+
 .carrito {
     width: 80%;
     margin: 20px auto;
@@ -11,11 +53,6 @@
 .carrito h2 {
     text-align: center;
     color: #365b6d;
-}
-
-.carrito-items {
-    list-style: none;
-    padding: 0;
 }
 
 .carrito-item {
@@ -46,11 +83,6 @@
 .carrito-item-precio {
     font-size: 18px;
     color: #0567a0;
-}
-
-.carrito-item-cantidad {
-    display: flex;
-    align-items: center;
 }
 
 .carrito-item-cantidad input {

@@ -36,6 +36,11 @@ app.get("/admin", (req, res) => {
     res.sendFile("pages/admin/admin.html", { root: __dirname });
 });
 
+app.get("/carrito", (req, res) => {
+    res.sendFile("pages/carrito.html", { root: __dirname });
+});
+
 app.post("/api/register", authentication.register);
 
 app.post("/api/login", authentication.login);
+
