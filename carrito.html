@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="home.html">Inicio</a></li>
+                <li><a href="#">Tienda</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="carrito">
+            <h2>Carrito de Compras</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Total</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="lista-carrito">
+                
+                </tbody>
+            </table>
+            <p class="carrito-total">Total: $<span id="total">0.00</span></p>
+            <button class="btn-comprar" id="btn-comprar">Finalizar Compra</button>
+        </section>
+    </main>
+    
+    <script src="carrito.js"></script>
+</body>
+</html>
